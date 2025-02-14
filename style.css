@@ -114,20 +114,6 @@ body {
     background-color: var(--white);
 }
 
-code {
-    background-color: var(--black);
-    color: var(--white);
-    padding: 0.2em 0.3em;
-    border-radius: .3em;
-    font-size: 0.9em;
-}
-
-a {
-    color: var(--blue);
-    text-decoration: underline;
-    cursor: pointer;
-}
-
 /* exercise layout */
 .container {
     height: 100vh;
@@ -194,19 +180,19 @@ p {
 }
 
 .band-wrapper:nth-child(3n) .band {
-    background-color: #FFB84C;
+    background-color: #60A3D9;
 }
 
 .band-wrapper:nth-child(4n) .band {
-    background-color: #FF7F50;
+    background-color: #7da9db;
 }
 
 .band-wrapper:nth-child(5n) .band {
-    background-color: #FF6347;
+    background-color: #FF7F50;
 }
 
 .band-wrapper:nth-child(6n) .band {
-    background-color: #FF4500;
+    background-color: #3498DB;
 }
 
 body h1 {
