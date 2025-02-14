@@ -1,0 +1,221 @@
+/* Reset CSS */
+
+/* Box sizing border-box reset */
+html {
+    box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+/* Remove default margin and padding */
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+dl,
+dd,
+ol,
+ul,
+figure,
+hr,
+fieldset,
+legend,
+textarea,
+input,
+table,
+th,
+td,
+caption {
+    margin: 0;
+    padding: 0;
+}
+
+/* Remove list styles */
+ul,
+ol {
+    list-style: none;
+}
+
+/* Remove default typography styles */
+body {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+/* Remove default link styles */
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Remove default button styles */
+button {
+    border: none;
+    background: none;
+    cursor: pointer;
+}
+
+/* Remove default form styles */
+input,
+textarea,
+select,
+button {
+    font: inherit;
+    margin: 0;
+    padding: 0;
+    border: none;
+    outline: none;
+    background: none;
+    appearance: none;
+}
+
+/* Remove default table styles */
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/* Remove default image styles */
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+@font-face {
+    font-family: 'Sud';
+    src: url('/Sud.woff2') format('woff2');
+    text-rendering: optimizeLegibility;
+}
+
+:root {
+    --black: #333;
+    --white: #f2f2f2;
+    --blue: #007bff;
+}
+
+html {
+    font-size: 1.8vh;
+}
+
+body {
+    color: var(--black);
+    background-color: var(--white);
+}
+
+code {
+    background-color: var(--black);
+    color: var(--white);
+    padding: 0.2em 0.3em;
+    border-radius: .3em;
+    font-size: 0.9em;
+}
+
+a {
+    color: var(--blue);
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+/* exercise layout */
+.container {
+    height: 100vh;
+    height: 100dvh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    cursor: pointer;
+}
+
+/* exercise container */
+.exercise {
+    width: 100%;
+    flex-grow: 1;
+    position: relative;
+}
+
+.exercise {
+    overflow: hidden;
+    cursor: pointer;
+}
+
+p {
+    font-size: 10vw;
+    line-height: 1em;
+    font-family: 'Sud';
+    margin: -0.2em 0.2em 0;
+    white-space: nowrap;
+}
+
+.band-wrapper {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.band {
+    width: 250vw;
+    height: auto;
+    padding: 10px 0;
+
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-shrink: 0;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    overflow: hidden;
+}
+
+.band-wrapper:nth-child(1n) .band {
+    background-color: #FF6F3C;
+}
+
+.band-wrapper:nth-child(2n) .band {
+    background-color: #F9A84D;
+}
+
+.band-wrapper:nth-child(3n) .band {
+    background-color: #FFB84C;
+}
+
+.band-wrapper:nth-child(4n) .band {
+    background-color: #FF7F50;
+}
+
+.band-wrapper:nth-child(5n) .band {
+    background-color: #FF6347;
+}
+
+.band-wrapper:nth-child(6n) .band {
+    background-color: #FF4500;
+}
+
+body h1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 10vw;
+    font-family: 'Sud';
+    color: var(--black);
+    z-index: -1;
+}
